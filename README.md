@@ -1,5 +1,5 @@
 # Real-Time-Covid-Information
-This python code will let you know about the current all kind of cases related to covid-19.
+This python code will let you know about the current all kind of cases related to covid-19 and as a tweet , it will show you on your twitter handle.
 
 Step 1: Install tweepy
 
