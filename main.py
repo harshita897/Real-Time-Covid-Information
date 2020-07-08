@@ -9,6 +9,7 @@ def create_tweet():
     doc = html.fromstring(response.content)
     total, deaths, recovered = doc.xpath('//div[@class="maincounter-number"]/span/text()')
 
+    #your tweet will be seen as below so add your hashtags
     tweet = f'''Coronavirus automated WorldWide Latest Updates
 Total cases: {total}
 Recovered: {recovered}
@@ -20,8 +21,8 @@ Stay Safe
     return tweet
 
 if __name__ == '__main__':
-    auth = tweepy.OAuthHandler('eY9qQrIZaDuzkmg49NoXVThFX','hKO2UOmHJ68d00UF3YLU84bYV5f82aKPk8krpfxex7lp7jXJFo')
-auth.set_access_token('1256632516397731841-nhHPnZD8nJHxyRwZrch3Mk0WCDMg5s','7vzEMP7eYTZVaznhTTnfPcmydk5DXO0Gebexbz3UD0jKW')
+    auth = tweepy.OAuthHandler('Consumer_key','Consumer_secret')
+auth.set_access_token('Access_token','Access_token_secret')
     # Create API object
 api = tweepy.API(auth)
 
